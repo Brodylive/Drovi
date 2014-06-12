@@ -19,7 +19,7 @@ Fonctionnalités:
 - Signaler un horaire erroné
 - Modifier un horaire erroné
 - Ajouter un nouvel horaire
-- 
+
 
 
 Pour le moment, le code de Drovi reste un chaos total, j'ai préféré avoir toutes les fonctionnalités avec un code quelque peu brouillon, plutôt que la moitié des fonctionnalités. 
