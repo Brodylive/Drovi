@@ -1,8 +1,10 @@
 Drovi
 =====
 
-Trouve un commerce ici et maintenant
+<b>Trouve un commerce ici et maintenant</b>
 
 
-Défi : mon TFE est entièrement fonctionnel
+<b>Défi :</b> mon TFE est entièrement fonctionnel
 
+
+Le projet Drovi est actuellement fonctionnel, 
