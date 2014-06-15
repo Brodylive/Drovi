@@ -5,7 +5,7 @@
 
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=jenniferdenis', 'jenniferdenis', 'SjwYCnv2tt29BqLd');
+	$bdd = new PDO('mysql:host=localhost;dbname=DB', 'DB', 'MDP');
 }
 catch (Exception $e)
 {
