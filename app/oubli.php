@@ -5,7 +5,7 @@
 
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=jenniferdenis', 'jenniferdenis', 'SjwYCnv2tt29BqLd');
+	$bdd = new PDO('mysql:host=localhost;dbname=DB', 'DB', 'MDP');
 }
 catch (Exception $e)
 {
@@ -87,8 +87,8 @@ session_start();
 			$nomuser=$_SESSION['drovi_nom'];
 		
 		?>
-			<a href="?action=deco" id="deconnexion" title="Déconnexion">Ton compte</a>
-			<p class="popin ofmenu <? echo $stylechanged; ?>" id="decoinfos">Déconnexion du compte</p>
+			<a href="?action=deco" id="deconnexion" title="Dï¿½connexion">Ton compte</a>
+			<p class="popin ofmenu <? echo $stylechanged; ?>" id="decoinfos">Dï¿½connexion du compte</p>
 			<a href="compte.php" id="nomuser" style="text-decoration:none;margin-top:8px;margin-right:10px;float:right;">Salut <? echo $nomuser; ?>!</a>
 		<?
 		} else {
@@ -103,12 +103,12 @@ session_start();
 			$_SESSION['drovi']='';
 			$_SESSION['drovi_xp']='';
 			
-			echo "<script>popup('Tu va être déconnecté...') setTimeout(function(){window.location.reload();},3000);</script>";
+			echo "<script>popup('Tu va ï¿½tre dï¿½connectï¿½...') setTimeout(function(){window.location.reload();},3000);</script>";
 		}
 		?>
 		
 	
-		<h1><a href="index.php" title="Retour à l'accueil">Drovi</a></h1>
+		<h1><a href="index.php" title="Retour ï¿½ l'accueil">Drovi</a></h1>
 	
 	</header>
 	
@@ -167,13 +167,13 @@ session_start();
     	}
     	
     	if(!$_SESSION['drovi']) {
-	    	echo "<p style='padding:20px 10px;text-align:center;'>Toi aussi participe à Drovi, inscris-toi et gagne de l'expérience!</p>";
+	    	echo "<p style='padding:20px 10px;text-align:center;'>Toi aussi participe ï¿½ Drovi, inscris-toi et gagne de l'expï¿½rience!</p>";
     	} else {
     	
     	if($ok) {
 	    	echo "<p style='padding:20px 10px;text-align:center;'><strong>FELICITATIONS!<strong></p>";
     	} else {    	
-	    	echo "<p style='padding:20px 10px;'><strong>Ajoute</strong> des favoris et des commerces, <strong>modifie</strong> les commerces qui ont un horaire incorrect pour <strong>gagner de l'expérience</strong> et arriver dans le <strong>top 3</strong>!</p>";
+	    	echo "<p style='padding:20px 10px;'><strong>Ajoute</strong> des favoris et des commerces, <strong>modifie</strong> les commerces qui ont un horaire incorrect pour <strong>gagner de l'expï¿½rience</strong> et arriver dans le <strong>top 3</strong>!</p>";
 	    	}
     	}
     	
@@ -270,7 +270,7 @@ function createXhrObject(){
 		}
 	}
 	    window.alert("Votre navigateur ne prend pas en charge l'objet XMLHTTPRequest.");
-	    return null; // non supporté
+	    return null; // non supportï¿½
 	}
 
 	xhr=createXhrObject();
@@ -398,7 +398,7 @@ function createXhrObject(){
 				$("#mdp").removeClass("ok");
 				$("#mdp").css("background", "#e74c3c");
 				$('#email').hover(function(){$(this).css("color", "#fff");});
-				popup('Ton mot de passe doit contenir 6 caractères minimum');	
+				popup('Ton mot de passe doit contenir 6 caractï¿½res minimum');	
 			} else {
 				$("#mdp").addClass("ok");
 			}
